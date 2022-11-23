@@ -18,8 +18,8 @@ export default function App() {
             <Link to="/daterangepicker">DateRangePicker</Link>
           </li>
           <li>
-            <Link to="/multicascader">
-              <b>MultiCascader</b>
+            <Link to="/cascader">
+              <b>Cascader</b>
             </Link>
           </li>
           <li>

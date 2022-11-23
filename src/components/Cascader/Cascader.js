@@ -1,4 +1,4 @@
-import { MultiCascader } from "rsuite";
+import { Cascader, MultiCascader } from "rsuite";
 
 const dataForm = [
   {
@@ -188,7 +188,7 @@ const dataUni = [
 ];
 
 const style = {
-  width: 225,
+  width: 325,
   maxWidth: 350
 };
 
@@ -198,7 +198,7 @@ export default function MultiCascaderApp() {
       <br />
       Seleção de formulário
       <br />
-      <MultiCascader
+      <Cascader
         placeholder="Formulário"
         data={dataForm}
         menuWidth={225}
