@@ -1,0 +1,53 @@
+:root {
+  --font-color-black: #1b253a;
+  --font-color-grayscale-graphite-700: #8a8c8b;
+  --font-color-brand-lightblue-500: #3a84ff;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 200, "opsz" 20;
+  color: var(--font-color-brand-lightblue-500);
+  font-size: 36px;
+  position: relative;
+  left: -8px;
+}
+
+.barraSaldo {
+  display: grid;
+  place-items: center;
+  width: 65vw;
+}
+
+.tooltip-texto {
+  text-align: right;
+}
+
+main {
+  background-color: #e5e5e5;
+  min-width: 224px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 8px;
+}
+
+span.saldoBar-left {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--font-color-grayscale-graphite-700);
+}
+
+span.saldoBar-right {
+  display: flex;
+  place-items: center;
+  position: relative;
+  left: 16px;
+}
+
+span.saldoBar-values {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--font-color-black);
+}

@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #f9f9f9;
+  padding: 0 min(5.5rem, 4.4vw);
+  display: grid;
+  place-items: start left;
+}
+
+.container {
+  height: 90vh;
+  width: 95vw;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.container nav {
+  margin-right: 1.5rem;
+  padding-right: 1rem;
+  width: min(30vw, 250px);
+  border-right: 1px solid gray;
+}
+
+.container ul {
+  margin-top: 1rem;
+}

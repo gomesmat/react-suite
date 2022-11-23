@@ -1,0 +1,107 @@
+{
+  "dataOps": [
+    {
+      "label": "Carga",
+      "value": "carga"
+    },
+    {
+      "label": "Descarga",
+      "value": "descarga"
+    },
+    {
+      "label": "Descarga Noturna",
+      "value": "descarganot"
+    },
+    {
+      "label": "Unique Value",
+      "value": "val"
+    }
+  ],
+  "dataDistribuir": [
+    {
+      "label": "Veículos",
+      "value": "veiculos"
+    },
+    {
+      "label": "Volume",
+      "value": "volume"
+    }
+  ],
+  "dataNomes": [
+    {
+      "label": "Eugenia",
+      "value": "1",
+      "role": "Master"
+    },
+    {
+      "label": "Kariane",
+      "value": "2",
+      "role": "Master"
+    },
+    {
+      "label": "Louisa",
+      "value": "Louisa",
+      "role": "Master"
+    },
+    {
+      "label": "Marty",
+      "value": "Marty",
+      "role": "Master"
+    },
+    {
+      "label": "Kenya",
+      "value": "Kenya",
+      "role": "Master"
+    },
+    {
+      "label": "Hal",
+      "value": "Hal",
+      "role": "Developer"
+    },
+    {
+      "label": "Julius",
+      "value": "Julius",
+      "role": "Developer"
+    },
+    {
+      "label": "Travon",
+      "value": "Travon",
+      "role": "Developer"
+    },
+    {
+      "label": "Vincenza",
+      "value": "Vincenza",
+      "role": "Developer"
+    },
+    {
+      "label": "Dominic",
+      "value": "Dominic",
+      "role": "Developer"
+    },
+    {
+      "label": "Pearlie",
+      "value": "Pearlie",
+      "role": "Guest"
+    },
+    {
+      "label": "Tyrel",
+      "value": "Tyrel",
+      "role": "Guest"
+    },
+    {
+      "label": "Jaylen",
+      "value": "Jaylen",
+      "role": "Guest"
+    },
+    {
+      "label": "Value1",
+      "value": "val1",
+      "role": "Guest"
+    },
+    {
+      "label": "Value2",
+      "value": "val2",
+      "role": "Guest"
+    }
+  ]
+}
