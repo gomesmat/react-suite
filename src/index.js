@@ -1,3 +1,4 @@
+import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -20,7 +21,7 @@ root.render(
         <Route path="/" element={<App />}>
           <Route path="checkpicker" element={<CheckPicker />} />
           <Route path="daterangepicker" element={<DateRangePicker />} />
-          {/* <Route path="cascader" element={<Cascader />} /> */}
+          <Route path="cascader" element={<Cascader />} />
           {/* <Route path="tooltip" element={<Tooltip />} /> */}
           <Route path="*" element={<App />} />
         </Route>

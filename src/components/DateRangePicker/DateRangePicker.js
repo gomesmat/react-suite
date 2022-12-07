@@ -1,3 +1,4 @@
+import React from 'react';
 import { DateRangePicker } from "rsuite";
 import * as dateFns from "date-fns";
 

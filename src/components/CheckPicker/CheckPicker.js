@@ -1,6 +1,7 @@
-import { CheckPicker, SelectPicker } from "rsuite";
+import React from 'react';
+import { CheckPicker, SelectPicker } from 'rsuite';
 
-import { dataOps, dataNomes, dataDistribuir } from "./data.json";
+import { dataOps, dataNomes, dataDistribuir } from './data.json';
 
 export default function CheckPickerSelect() {
   return (
