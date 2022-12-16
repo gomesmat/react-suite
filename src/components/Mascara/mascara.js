@@ -1,5 +1,5 @@
 import React from 'react'
-import { MaskedInput, SelectPicker } from 'rsuite'
+import { Input, MaskedInput, SelectPicker } from 'rsuite'
 
 const options = [
   {
@@ -22,49 +22,67 @@ const options = [
     mask: [/\d/, /\d/, '.', /\d/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/],
     placeholder: '00.000.000/0000-00'
   },
+  {
+    name: 'CEP',
+    mask: [/\d/, /\d/, /\d/, /\d/, /\d/,'-', /\d/, /\d/, /\d/],
+    placeholder: '00000-000'
+  },
 ];
 
 export default function Mascara () {
-  const [value, setValue] = React.useState('');
+  const [value, setValue] = React.useState([]);
   const [showMask] = React.useState(false);
   const [guide] = React.useState(true);
   const [option, setOption] = React.useState(options[0]);
 
   return (
     <div style={{marginTop: '2rem'}}>
+      <label>Campo normal</label>
+      <Input
+        value={value[0]}
+        guide={guide}
+        showMask={showMask}
+        placeholder={''}
+        placeholderChar={'_'}
+        onChange={setValue[0]}
+        />
+      <br/>
       <label>Data</label>
       <MaskedInput
-        value={value}
+        value={value[1]}
         mask={options[0].mask}
         guide={guide}
         showMask={showMask}
         placeholder={options[0].placeholder}
         placeholderChar={'_'}
-        onChange={setValue}
+        onChange={setValue[1]}
       />
       <br/>
       <label>CPF</label>
       <MaskedInput
-        value={value}
+        value={value[2]}
         mask={options[1].mask}
         guide={guide}
         showMask={showMask}
         placeholder={options[1].placeholder}
         placeholderChar={'_'}
-        onChange={setValue}
+        onChange={setValue[2]}
       />
       <br/>
       <label>CNPJ</label>
       <MaskedInput
-        value={value}
+        value={value[3]}
         mask={options[2].mask}
         guide={guide}
         showMask={showMask}
         placeholder={options[2].placeholder}
         placeholderChar={'_'}
-        onChange={setValue}
+        onChange={setValue[3]}
         />
         <br/>
+        <br/>
+        <br/>
+        <label><b>CAMPO PERSONALIZADO</b></label>
         <br/>
         <br/>
         <label>Tipo de campo</label>
@@ -83,15 +101,14 @@ export default function Mascara () {
         />
         <br/>
         <br/>
-        <label>CAMPO PERSONALIZADO</label>
         <MaskedInput
-          value={value}
+          value={value[4]}
           mask={option.mask}
           guide={guide}
           showMask={showMask}
           placeholder={option.placeholder}
           placeholderChar={'_'}
-          onChange={setValue}
+          onChange={setValue[4]}
           />
     </div>
   );
