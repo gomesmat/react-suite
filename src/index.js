@@ -7,6 +7,7 @@ import CheckPicker from './components/CheckPicker/CheckPicker.js';
 import DateRangePicker from './components/DateRangePicker/DateRangePicker.js';
 import Cascader from './components/Cascader/Cascader.js';
 import Tooltip from './components/Tooltip/Tooltip.js';
+import Mascara from './components/Mascara/mascara.js';
 
 import { CustomProvider } from 'rsuite';
 import ptBR from 'rsuite/locales/pt_BR'; // mudar para pt_BR
@@ -23,6 +24,7 @@ root.render(
           <Route path="daterangepicker" element={<DateRangePicker />} />
           <Route path="cascader" element={<Cascader />} />
           {/* <Route path="tooltip" element={<Tooltip />} /> */}
+          <Route path="mascara" element={<Mascara />} />
           <Route path="*" element={<App />} />
         </Route>
       </Routes>

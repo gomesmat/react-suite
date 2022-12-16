@@ -19,11 +19,14 @@ export default function App() {
           </li>
           <li>
             <Link to="/cascader">
-              <b>Cascader</b>
+              Cascader
             </Link>
           </li>
           <li>
             <Link to="/tooltip">Tooltip</Link>
+          </li>
+          <li>
+            <Link to="/mascara">Mascara</Link>
           </li>
         </ul>
       </nav>
